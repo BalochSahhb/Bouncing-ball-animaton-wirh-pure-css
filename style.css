@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items:center;
+    width: 100%;
+    min-height: 100vh;
+   animation: anime 10s linear infinite ;
+
+}
+@keyframes anime {
+    0%{
+        background-color: rgb(147, 190, 227);
+    }
+    20%{
+        background-color: rgb(198, 236, 29);
+    }
+    40%{
+        background-color: rgb(65, 86, 4);
+    }
+
+    60%{
+        background-color: rgb(106, 6, 247);
+    }
+
+    80%{
+        background-color: rgb(223, 13, 13);
+    }
+    100%{
+        background-color: rgb(224, 5, 235);
+    }
+
+
+
+    
+}
+ul{
+    margin-top: 200px;
+    display: flex;
+    border-bottom: 10px solid rgb(255, 255, 255);
+    place-items: center;
+    border-radius: 10px;
+}
+ul li{
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    margin: 0 20px;
+    list-style: none;
+    animation: bouncing 1s linear infinite;
+}
+@keyframes bouncing {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-150px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+ul li:nth-child(2){
+    animation-delay: 0.2s;
+}
+ul li:nth-child(3){
+    animation-delay: 0.4s;
+}
+ul li:nth-child(4){
+    animation-delay: 0.6s;
+}
+ul li:nth-child(5){
+    animation-delay: 0.8s;
+}
+ul li:nth-child(6){
+    animation-delay: 0.10s;
+}
+ 
